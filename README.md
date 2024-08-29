@@ -24,12 +24,12 @@ Steps to create Jenkins builds in container (Jenkins in)"
 
 - Build the image: 
 ```
-docker build -t jenkins-with-docker .
+docker build -t jenkins-with-yarn .
 ```
 
 - Check specific package version in the image: 
 ```
-docker run --rm -t jenkins-custom node --version
+docker run --rm -t jenkins-with-yarn node --version
 ```
 
 - Build jenkins: 
@@ -39,5 +39,5 @@ docker run -d \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -p 8082:8080 \
   -p 50001:50000 \
-  jenkins-with-docker
+  jenkins-with-yarn
 ```
