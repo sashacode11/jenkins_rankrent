@@ -2,6 +2,7 @@
 
 Steps to create Jenkins builds in container (Jenkins in)"
 - Add package want to create in Dockerfile
+```
 	FROM jenkins/jenkins:lts
 
 	USER root
@@ -19,6 +20,7 @@ Steps to create Jenkins builds in container (Jenkins in)"
 
 	# Switch back to the jenkins user
 	USER jenkins
+```
 
 - Build the image: 
 ```
